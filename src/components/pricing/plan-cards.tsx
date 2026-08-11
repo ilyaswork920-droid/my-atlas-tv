@@ -39,7 +39,14 @@ function PlanCard({ plan }: { plan: Plan }) {
         <span className="text-xs font-semibold uppercase tracking-[0.14em] text-purple-300">
           {plan.duration} · {plan.devices}
         </span>
-        <h3 className="font-display text-xl font-bold text-cloud">{plan.name}</h3>
+        <h3
+          className={cn(
+            "font-display text-2xl font-bold tracking-tight",
+            plan.highlighted ? "text-gradient" : "text-cloud"
+          )}
+        >
+          {plan.name}
+        </h3>
       </div>
 
       <div className="flex items-baseline gap-3">
@@ -61,7 +68,7 @@ function PlanCard({ plan }: { plan: Plan }) {
         variant={plan.highlighted ? "primary" : "secondary"}
         className="mt-auto w-full"
       >
-        Jetzt kaufen
+        Jetzt bestellen
       </WhatsAppButton>
     </motion.div>
   );

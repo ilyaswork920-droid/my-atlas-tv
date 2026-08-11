@@ -53,7 +53,7 @@ const baseFeatures = [
 export const plans: Plan[] = [
   {
     id: "3-months",
-    name: "Premium Paket",
+    name: "Essential Access",
     duration: "3 Monate",
     devices: "1 Gerät",
     price: 29,
@@ -66,7 +66,7 @@ export const plans: Plan[] = [
   },
   {
     id: "12-months",
-    name: "Premium Paket ++",
+    name: "Most Popular",
     duration: "12 Monate",
     devices: "1 Gerät",
     price: 59,
@@ -82,7 +82,7 @@ export const plans: Plan[] = [
   },
   {
     id: "6-months",
-    name: "Premium Paket +",
+    name: "Ultimate Experience",
     duration: "6 Monate",
     devices: "1 Gerät",
     price: 39,
