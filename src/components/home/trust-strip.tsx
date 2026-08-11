@@ -5,10 +5,10 @@ import { RevealGroup, revealItem } from "@/components/ui/reveal";
 import { motion } from "framer-motion";
 
 const items = [
-  { icon: Tv, label: "HD, 4K & 8K streaming" },
-  { icon: Globe2, label: "Local & international channels" },
-  { icon: Sparkles, label: "15,000+ live channels" },
-  { icon: Smartphone, label: "Works on all your devices" },
+  { icon: Tv, label: "HD, 4K & 8K Streaming" },
+  { icon: Globe2, label: "Lokale & internationale Sender" },
+  { icon: Sparkles, label: "15.000+ Live-Kanäle" },
+  { icon: Smartphone, label: "Funktioniert auf allen Geräten" },
 ];
 
 export function TrustStrip() {

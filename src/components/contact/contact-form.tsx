@@ -44,14 +44,14 @@ export function ContactForm() {
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Your full name"
+            placeholder="Dein vollständiger Name"
             className="h-12 rounded-xl border border-white/10 bg-black/30 px-4 text-sm text-cloud outline-none placeholder:text-muted-dark focus:border-purple-400/50 focus:ring-2 focus:ring-purple-400/20"
           />
         </div>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="email" className="text-sm font-medium text-mist">
-            Email
+            E-Mail
           </label>
           <input
             id="email"
@@ -60,14 +60,14 @@ export function ContactForm() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@example.com"
+            placeholder="du@beispiel.de"
             className="h-12 rounded-xl border border-white/10 bg-black/30 px-4 text-sm text-cloud outline-none placeholder:text-muted-dark focus:border-purple-400/50 focus:ring-2 focus:ring-purple-400/20"
           />
         </div>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="message" className="text-sm font-medium text-mist">
-            Message
+            Nachricht
           </label>
           <textarea
             id="message"
@@ -76,7 +76,7 @@ export function ContactForm() {
             rows={5}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Tell us which plan you're interested in, or ask a question..."
+            placeholder="Sag uns, für welchen Tarif du dich interessierst, oder stell eine Frage..."
             className="resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-cloud outline-none placeholder:text-muted-dark focus:border-purple-400/50 focus:ring-2 focus:ring-purple-400/20"
           />
         </div>
@@ -85,7 +85,7 @@ export function ContactForm() {
           type="submit"
           className="group mt-2 inline-flex h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-sm font-semibold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.08)_inset] transition-all duration-300 hover:shadow-glow-purple hover:brightness-110"
         >
-          Send via WhatsApp
+          Über WhatsApp senden
           <Send className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </button>
 
@@ -94,12 +94,12 @@ export function ContactForm() {
           animate={{ opacity: sent ? 1 : 0, height: sent ? "auto" : 0 }}
           className="overflow-hidden text-center text-sm font-medium text-purple-300"
         >
-          Opening WhatsApp — send the pre-filled message to reach us.
+          WhatsApp wird geöffnet — sende die vorausgefüllte Nachricht, um uns zu erreichen.
         </motion.p>
 
         <p className="text-center text-xs text-muted-dark">
-          Submitting opens WhatsApp with your message pre-filled. We never store your details on a
-          server.
+          Beim Absenden öffnet sich WhatsApp mit deiner vorausgefüllten Nachricht. Wir speichern
+          deine Daten niemals auf einem Server.
         </p>
       </form>
     </Reveal>

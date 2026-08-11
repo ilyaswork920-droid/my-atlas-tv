@@ -19,9 +19,9 @@ export function DevicesGrid() {
     <section className="relative py-24 sm:py-28">
       <div className="container-edge flex flex-col gap-14">
         <SectionHeading
-          eyebrow="Compatibility"
-          title="Works on the devices you already own"
-          description="No extra hardware required — install the app and start streaming."
+          eyebrow="Kompatibilität"
+          title="Funktioniert auf Geräten, die du bereits besitzt"
+          description="Keine zusätzliche Hardware nötig — App installieren und losstreamen."
         />
 
         <RevealGroup className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6" stagger={0.06}>

@@ -4,8 +4,8 @@ import { Logo } from "@/components/ui/logo";
 import { navLinks, siteConfig } from "@/lib/site-config";
 
 const legalLinks = [
-  { label: "Legal Notice", href: "/legal-notice" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Impressum", href: "/legal-notice" },
+  { label: "Datenschutz", href: "/privacy-policy" },
 ];
 
 export function Footer() {
@@ -17,8 +17,8 @@ export function Footer() {
         <div className="flex flex-col gap-4">
           <Logo />
           <p className="max-w-sm text-sm leading-relaxed text-muted">
-            Premium IPTV subscription built for streamers everywhere — 15,000+ live channels,
-            HD/4K/8K streaming and instant activation, backed by real support on WhatsApp.
+            Premium-IPTV-Abo für Streamer überall — 15.000+ Live-Kanäle, HD/4K/8K-Streaming und
+            sofortige Aktivierung, mit echtem Support auf WhatsApp.
           </p>
           <div className="flex items-center gap-3 pt-2">
             <a
@@ -26,14 +26,14 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-mist transition-colors hover:border-purple-400/40 hover:text-white"
-              aria-label="Chat on WhatsApp"
+              aria-label="Auf WhatsApp chatten"
             >
               <MessageCircle className="h-[18px] w-[18px]" />
             </a>
             <a
               href={`mailto:${siteConfig.supportEmail}`}
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-mist transition-colors hover:border-purple-400/40 hover:text-white"
-              aria-label="Email support"
+              aria-label="E-Mail an den Support"
             >
               <Mail className="h-[18px] w-[18px]" />
             </a>
@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold text-cloud">Contact</h3>
+          <h3 className="text-sm font-semibold text-cloud">Kontakt</h3>
           <ul className="mt-4 flex flex-col gap-3 text-sm text-muted">
             <li>
               <a href={`mailto:${siteConfig.supportEmail}`} className="transition-colors hover:text-white">
@@ -76,7 +76,7 @@ export function Footer() {
               </a>
             </li>
           </ul>
-          <h3 className="mt-6 text-sm font-semibold text-cloud">Legal</h3>
+          <h3 className="mt-6 text-sm font-semibold text-cloud">Rechtliches</h3>
           <ul className="mt-4 flex flex-col gap-3">
             {legalLinks.map((link) => (
               <li key={link.label}>
@@ -91,10 +91,11 @@ export function Footer() {
 
       <div className="border-t border-white/5">
         <div className="container-edge flex flex-col gap-3 py-6 text-xs text-muted-dark sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} {siteConfig.name}. All rights reserved.</p>
+          <p>© {year} {siteConfig.name}. Alle Rechte vorbehalten.</p>
           <p className="max-w-xl sm:text-right">
-            Channel availability and streaming quality may vary by device, plan and internet
-            connection. {siteConfig.domain} is an independent IPTV service provider.
+            Kanalverfügbarkeit und Streamingqualität können je nach Gerät, Tarif und
+            Internetverbindung variieren. {siteConfig.domain} ist ein unabhängiger
+            IPTV-Dienstanbieter.
           </p>
         </div>
       </div>

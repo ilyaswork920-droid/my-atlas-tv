@@ -6,19 +6,19 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 
 const cable = [
-  "€60+ per month",
-  "12–24 month contracts",
-  "Limited channel packages",
-  "Extra equipment rental fees",
-  "Slow customer support",
+  "€60+ pro Monat",
+  "12–24 Monate Vertragslaufzeit",
+  "Begrenzte Senderpakete",
+  "Zusätzliche Gerätemiete",
+  "Langsamer Kundenservice",
 ];
 
 const iptv = [
-  "From €30 per year",
-  "No long-term contract",
-  "15,000+ channels included",
-  "Works on devices you already own",
-  "24/7 WhatsApp support",
+  "Ab €30 pro Jahr",
+  "Keine langfristige Vertragsbindung",
+  "15.000+ Kanäle inklusive",
+  "Funktioniert auf Geräten, die du bereits besitzt",
+  "24/7 WhatsApp-Support",
 ];
 
 export function PriceComparison() {
@@ -26,16 +26,16 @@ export function PriceComparison() {
     <section className="relative py-24 sm:py-28">
       <div className="container-edge flex flex-col gap-14">
         <SectionHeading
-          eyebrow="Why switch"
-          title="Save up to €690 a year vs. cable & satellite"
-          description="Traditional TV locks you into expensive contracts. Atlas TV doesn't."
+          eyebrow="Warum wechseln"
+          title="Bis zu €690 pro Jahr sparen gegenüber Kabel & Satellit"
+          description="Klassisches Fernsehen bindet dich an teure Verträge. IPTV Germany nicht."
         />
 
         <div className="mx-auto grid w-full max-w-3xl grid-cols-1 gap-6 sm:grid-cols-2">
           <Reveal direction="left">
             <div className="flex h-full flex-col gap-5 rounded-3xl border border-white/8 bg-navy-900/50 p-8">
               <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
-                Cable / Satellite
+                Kabel / Satellit
               </h3>
               <ul className="flex flex-col gap-4">
                 {cable.map((item) => (
@@ -55,7 +55,7 @@ export function PriceComparison() {
                 className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-gradient-to-br from-purple-500/30 to-blue-500/20 blur-2xl"
               />
               <h3 className="relative text-sm font-semibold uppercase tracking-wide text-purple-300">
-                Atlas TV
+                IPTV Germany
               </h3>
               <ul className="relative flex flex-col gap-4">
                 {iptv.map((item) => (
@@ -75,8 +75,8 @@ export function PriceComparison() {
           viewport={{ once: true }}
           className="text-center text-sm text-muted"
         >
-          Estimated annual savings based on average cable/satellite pricing of €60+/month vs.
-          our Basic plan at €30/year.
+          Geschätzte jährliche Ersparnis basierend auf durchschnittlichen Kabel-/Satellitenpreisen
+          von €60+/Monat gegenüber unserem 1-Bildschirm-Tarif ab €30/Jahr.
         </motion.p>
       </div>
     </section>

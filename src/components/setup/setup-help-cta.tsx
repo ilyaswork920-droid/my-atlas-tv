@@ -21,14 +21,14 @@ export function SetupHelpCta() {
           />
           <div className="relative flex flex-col items-center gap-6">
             <h2 className="font-display text-3xl font-bold tracking-tight text-cloud sm:text-4xl">
-              Still need a hand?
+              Brauchst du noch Hilfe?
             </h2>
             <p className="max-w-xl text-balance text-base text-muted sm:text-lg">
-              Message our team on WhatsApp and we&apos;ll walk you through setup live, in English or
-              German.
+              Schreib unserem Team auf WhatsApp und wir führen dich live durch die Einrichtung,
+              auf Deutsch oder Englisch.
             </p>
             <WhatsAppButton message={setupHelpWhatsAppMessage} size="lg" showArrow>
-              Get Setup Help
+              Einrichtungshilfe erhalten
             </WhatsAppButton>
           </div>
         </motion.div>

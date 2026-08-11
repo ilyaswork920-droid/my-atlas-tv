@@ -45,7 +45,7 @@ export function Header() {
       )}
     >
       <div className="container-edge flex h-[96px] items-center justify-between">
-        <Link href="/" className="shrink-0" aria-label="Atlas TV — Home" prefetch={false}>
+        <Link href="/" className="shrink-0" aria-label="IPTV Germany — Startseite" prefetch={false}>
           <Logo priority />
         </Link>
 
@@ -77,7 +77,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <WhatsAppButton message={trialWhatsAppMessage} size="md">
-            Free Trial
+            Kostenlos testen
           </WhatsAppButton>
         </div>
 
@@ -85,7 +85,7 @@ export function Header() {
           type="button"
           onClick={() => setOpen((v) => !v)}
           className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cloud lg:hidden"
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? "Menü schließen" : "Menü öffnen"}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -124,7 +124,7 @@ export function Header() {
               ))}
               <div className="mt-3">
                 <WhatsAppButton message={trialWhatsAppMessage} size="lg" className="w-full">
-                  Free Trial
+                  Kostenlos testen
                 </WhatsAppButton>
               </div>
             </div>

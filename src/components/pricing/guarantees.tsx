@@ -5,10 +5,10 @@ import { RevealGroup, revealItem } from "@/components/ui/reveal";
 import { motion } from "framer-motion";
 
 const items = [
-  { icon: Zap, title: "Instant Activation", description: "Get your access details within minutes of subscribing." },
-  { icon: Lock, title: "Secure Checkout", description: "Your details are handled directly with our support team." },
-  { icon: Headset, title: "24/7 Support", description: "Real people, ready to help on WhatsApp anytime." },
-  { icon: RefreshCcw, title: "Free Trial Available", description: "Try before you subscribe — no credit card required." },
+  { icon: Zap, title: "Sofortige Aktivierung", description: "Erhalte deine Zugangsdaten innerhalb weniger Minuten nach der Buchung." },
+  { icon: Lock, title: "Sicherer Checkout", description: "Deine Daten werden direkt mit unserem Support-Team abgewickelt." },
+  { icon: Headset, title: "24/7 Support", description: "Echte Menschen, jederzeit bereit, dir auf WhatsApp zu helfen." },
+  { icon: RefreshCcw, title: "Kostenlose Testphase", description: "Teste, bevor du buchst — keine Kreditkarte erforderlich." },
 ];
 
 export function Guarantees() {

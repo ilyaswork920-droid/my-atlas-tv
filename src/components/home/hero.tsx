@@ -8,10 +8,10 @@ import { Button } from "@/components/ui/button";
 import { trialWhatsAppMessage } from "@/lib/site-config";
 
 const stats = [
-  { value: "2,800+", label: "Happy customers" },
-  { value: "15,000+", label: "Live channels" },
-  { value: "4.9/5", label: "Average rating" },
-  { value: "99.9%", label: "Uptime" },
+  { value: "2.800+", label: "Zufriedene Kunden" },
+  { value: "15.000+", label: "Live-Kanäle" },
+  { value: "4,9/5", label: "Durchschnittliche Bewertung" },
+  { value: "99,9%", label: "Verfügbarkeit" },
 ];
 
 export function Hero() {
@@ -39,7 +39,7 @@ export function Hero() {
               <Star className="h-3 w-3 fill-white" />
               4.9/5
             </span>
-            Trusted by 2,800+ streamers worldwide
+            Das Vertrauen von 2.800+ Streamern weltweit
           </motion.div>
 
           <motion.h1
@@ -48,8 +48,8 @@ export function Hero() {
             transition={{ duration: 0.65, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
             className="font-display text-4xl font-bold leading-[1.08] tracking-tight text-cloud sm:text-5xl lg:text-[3.4rem]"
           >
-            Atlas TV: Premium IPTV —{" "}
-            <span className="text-gradient">HD, 4K &amp; 8K</span> streaming
+            IPTV Germany: Premium-Streaming in{" "}
+            <span className="text-gradient">HD, 4K &amp; 8K</span>
           </motion.h1>
 
           <motion.p
@@ -58,9 +58,9 @@ export function Hero() {
             transition={{ duration: 0.65, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg"
           >
-            The best IPTV subscription available: 15,000+ live channels, premium international
-            content, rock-solid streaming servers and instant activation — starting from{" "}
-            <span className="font-semibold text-cloud">€30/year</span>.
+            Das beste IPTV-Abo für Deutschland: 15.000+ Live-Kanäle, erstklassige internationale
+            Inhalte, stabile Streaming-Server und sofortige Aktivierung — schon ab{" "}
+            <span className="font-semibold text-cloud">€30/Jahr</span>.
           </motion.p>
 
           <motion.div
@@ -70,10 +70,10 @@ export function Hero() {
             className="flex flex-wrap items-center gap-3"
           >
             <WhatsAppButton message={trialWhatsAppMessage} size="lg" showArrow>
-              Subscribe
+              Jetzt abonnieren
             </WhatsAppButton>
             <Button href="/pricing" variant="secondary" size="lg">
-              View Pricing
+              Preise ansehen
             </Button>
           </motion.div>
 
@@ -84,10 +84,10 @@ export function Hero() {
             className="flex flex-wrap items-center gap-x-5 gap-y-2 pt-1 text-xs text-muted"
           >
             <span className="inline-flex items-center gap-1.5">
-              <Zap className="h-3.5 w-3.5 text-purple-400" /> Instant activation
+              <Zap className="h-3.5 w-3.5 text-purple-400" /> Sofortige Aktivierung
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <ShieldCheck className="h-3.5 w-3.5 text-purple-400" /> No credit card for trial
+              <ShieldCheck className="h-3.5 w-3.5 text-purple-400" /> Keine Kreditkarte für Testphase nötig
             </span>
           </motion.div>
 
@@ -116,7 +116,7 @@ export function Hero() {
           <div className="relative overflow-hidden rounded-[28px] border border-white/10 shadow-card">
             <Image
               src="/images/hero-tv-wall.jpg"
-              alt="Modern living room with a premium smart TV streaming Atlas TV channels"
+              alt="Modernes Wohnzimmer mit einem Premium-Smart-TV, der IPTV Germany-Kanäle streamt"
               width={900}
               height={1000}
               priority
@@ -131,8 +131,8 @@ export function Hero() {
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             className="glass-strong absolute -left-6 top-10 hidden w-52 rounded-2xl p-4 shadow-card sm:block"
           >
-            <p className="text-xs font-medium text-muted">Now streaming</p>
-            <p className="mt-1 text-sm font-semibold text-cloud">Top Sports · Live 4K</p>
+            <p className="text-xs font-medium text-muted">Jetzt live</p>
+            <p className="mt-1 text-sm font-semibold text-cloud">Top-Sport · Live 4K</p>
             <div className="mt-3 flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 animate-pulse-slow rounded-full bg-red-500" />
               <span className="text-[11px] font-medium uppercase tracking-wider text-red-400">
@@ -146,8 +146,8 @@ export function Hero() {
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
             className="glass-strong absolute -bottom-6 -right-4 w-48 rounded-2xl p-4 shadow-card sm:-right-8"
           >
-            <p className="text-xs font-medium text-muted">Channel library</p>
-            <p className="mt-1 font-display text-xl font-bold text-gradient">15,000+</p>
+            <p className="text-xs font-medium text-muted">Senderbibliothek</p>
+            <p className="mt-1 font-display text-xl font-bold text-gradient">15.000+</p>
           </motion.div>
         </motion.div>
       </div>

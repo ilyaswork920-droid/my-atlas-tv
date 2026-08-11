@@ -17,7 +17,7 @@ export function PricingHero() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-purple-300"
         >
-          Pricing
+          Preise
         </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
@@ -25,7 +25,7 @@ export function PricingHero() {
           transition={{ duration: 0.6, delay: 0.08 }}
           className="max-w-2xl font-display text-4xl font-bold tracking-tight text-cloud sm:text-5xl"
         >
-          Atlas TV <span className="text-gradient">subscription plans</span>
+          IPTV Germany <span className="text-gradient">Abo-Tarife</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
@@ -33,8 +33,8 @@ export function PricingHero() {
           transition={{ duration: 0.6, delay: 0.16 }}
           className="max-w-xl text-balance text-base text-muted sm:text-lg"
         >
-          Simple annual pricing with no hidden fees or long-term contracts. Choose the plan that
-          matches how you watch.
+          Einfache Jahrespreise ohne versteckte Kosten oder lange Vertragsbindung. Wähle den
+          Tarif, der zu deinem Sehverhalten passt.
         </motion.p>
       </div>
     </section>

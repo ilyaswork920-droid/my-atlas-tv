@@ -5,14 +5,14 @@ import { ContactInfo } from "@/components/contact/contact-info";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Atlas TV Germany Support",
+  title: "Kontakt | IPTV Germany Support",
   description:
-    "Get in touch with Atlas TV for IPTV subscription questions, setup help or billing support. Message us directly on WhatsApp for a fast reply.",
+    "Kontaktiere IPTV Germany bei Fragen zum Abo, zur Einrichtung oder zur Abrechnung. Schreib uns direkt auf WhatsApp für eine schnelle Antwort.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact Us | Atlas TV Germany Support",
+    title: "Kontakt | IPTV Germany Support",
     description:
-      "Get in touch with Atlas TV for IPTV subscription questions, setup help or billing support.",
+      "Kontaktiere IPTV Germany bei Fragen zum Abo, zur Einrichtung oder zur Abrechnung.",
     url: `${siteConfig.url}/contact`,
   },
 };

@@ -8,14 +8,14 @@ import { FinalCta } from "@/components/home/final-cta";
 import { siteConfig, plans } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "IPTV Subscription Germany | Pricing Plans from €30/year",
+  title: "IPTV Abo Deutschland | Tarife ab €30/Jahr",
   description:
-    "Compare IPTV Germany subscription plans: Basic, Plus and Premium. 15,000+ channels, HD/4K/8K streaming, catch-up TV and more. Buy IPTV Germany with instant activation.",
+    "Vergleiche die IPTV Germany Tarife: 1, 2 oder 3 Bildschirme. 15.000+ Kanäle, HD/4K/8K-Streaming, Catch-up TV und mehr. IPTV Deutschland mit sofortiger Aktivierung.",
   alternates: { canonical: "/pricing" },
   openGraph: {
-    title: "IPTV Subscription Germany | Pricing Plans from €30/year",
+    title: "IPTV Abo Deutschland | Tarife ab €30/Jahr",
     description:
-      "Compare IPTV Germany subscription plans: Basic, Plus and Premium. 15,000+ channels, HD/4K/8K streaming and instant activation.",
+      "Vergleiche die IPTV Germany Tarife: 1, 2 oder 3 Bildschirme. 15.000+ Kanäle, HD/4K/8K-Streaming und sofortige Aktivierung.",
     url: `${siteConfig.url}/pricing`,
   },
 };
@@ -23,18 +23,18 @@ export const metadata: Metadata = {
 const offerJsonLd = {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
-  name: `${siteConfig.name} Subscription Plans`,
+  name: `${siteConfig.name} Tarife`,
   itemListElement: plans.map((plan, index) => ({
     "@type": "Offer",
     position: index + 1,
-    name: `${plan.name} Plan`,
+    name: plan.name,
     price: plan.price,
     priceCurrency: "EUR",
     url: `${siteConfig.url}/pricing`,
     availability: "https://schema.org/InStock",
     itemOffered: {
       "@type": "Service",
-      name: `${siteConfig.name} ${plan.name} Plan`,
+      name: `${siteConfig.name} – ${plan.name}`,
       description: plan.features.join(", "),
     },
   })),

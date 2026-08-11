@@ -8,27 +8,27 @@ import { RevealGroup, revealItem } from "@/components/ui/reveal";
 const testimonials = [
   {
     name: "Michael K.",
-    city: "New York",
+    city: "Berlin",
     quote:
-      "The best IPTV provider I've tried. Stable 4K streams and the channel list is huge.",
+      "Der beste IPTV-Anbieter, den ich bisher hatte. Stabile 4K-Streams und eine riesige Senderliste.",
   },
   {
     name: "Sarah M.",
-    city: "London",
+    city: "Hamburg",
     quote:
-      "Setup on my Fire Stick took less than five minutes. The free trial made it an easy decision.",
+      "Die Einrichtung auf meinem Fire Stick hat keine fünf Minuten gedauert. Die kostenlose Testphase hat die Entscheidung leicht gemacht.",
   },
   {
     name: "Ahmed H.",
-    city: "Dubai",
+    city: "Frankfurt",
     quote:
-      "Great selection of international channels and WhatsApp support actually replies fast.",
+      "Tolle Auswahl an internationalen Kanälen, und der WhatsApp-Support antwortet wirklich schnell.",
   },
   {
     name: "Thomas W.",
-    city: "Toronto",
+    city: "München",
     quote:
-      "Cancelled my €60/month cable package. 8K on my Samsung TV looks incredible for the price.",
+      "Mein Kabelpaket für €60/Monat gekündigt. 8K auf meinem Samsung TV sieht für den Preis unglaublich aus.",
   },
 ];
 
@@ -37,9 +37,9 @@ export function Testimonials() {
     <section className="relative py-24 sm:py-28">
       <div className="container-edge flex flex-col gap-14">
         <SectionHeading
-          eyebrow="Customer stories"
-          title="What our customers say"
-          description="Real feedback from Atlas TV subscribers around the world."
+          eyebrow="Kundenstimmen"
+          title="Was unsere Kunden sagen"
+          description="Echtes Feedback von IPTV Germany-Abonnenten aus ganz Deutschland."
         />
 
         <RevealGroup className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.08}>

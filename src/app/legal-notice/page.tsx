@@ -5,13 +5,11 @@ import { Reveal } from "@/components/ui/reveal";
 
 export const metadata: Metadata = {
   title: "Legal Notice",
-  description:
-    "Mentions légales du site Atlas TV (myatlastv.com) : éditeur, hébergement, propriété intellectuelle et informations de contact.",
+  description: `Mentions légales du site ${siteConfig.name} (${siteConfig.domain}) : éditeur, hébergement, propriété intellectuelle et informations de contact.`,
   alternates: { canonical: "/legal-notice" },
   openGraph: {
     title: `Legal Notice | ${siteConfig.name}`,
-    description:
-      "Mentions légales du site Atlas TV (myatlastv.com) : éditeur, hébergement, propriété intellectuelle et informations de contact.",
+    description: `Mentions légales du site ${siteConfig.name} (${siteConfig.domain}) : éditeur, hébergement, propriété intellectuelle et informations de contact.`,
     url: `${siteConfig.url}/legal-notice`,
   },
 };

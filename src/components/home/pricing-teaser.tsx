@@ -14,9 +14,9 @@ export function PricingTeaser() {
     <section className="relative py-24 sm:py-28">
       <div className="container-edge flex flex-col gap-14">
         <SectionHeading
-          eyebrow="Pricing"
-          title="Simple, transparent annual plans"
-          description="No hidden fees, no contracts. Pick the plan that fits how you watch."
+          eyebrow="Preise"
+          title="Einfache, transparente Jahrestarife"
+          description="Keine versteckten Kosten, keine Vertragsbindung. Wähle den Tarif, der zu deinem Sehverhalten passt."
         />
 
         <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" stagger={0.08}>
@@ -58,7 +58,7 @@ export function PricingTeaser() {
                 variant={plan.highlighted ? "primary" : "secondary"}
                 className="mt-auto w-full"
               >
-                Subscribe Now
+                Jetzt abonnieren
               </WhatsAppButton>
             </motion.div>
           ))}
@@ -66,7 +66,7 @@ export function PricingTeaser() {
 
         <div className="flex justify-center">
           <Button href="/pricing" variant="ghost" showArrow>
-            Compare all plan features
+            Alle Tarifmerkmale vergleichen
           </Button>
         </div>
       </div>

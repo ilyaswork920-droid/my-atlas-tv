@@ -21,19 +21,19 @@ const sora = Sora({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Premium IPTV Subscription in Germany`,
+    default: `${siteConfig.name} | Premium IPTV-Abo für Deutschland`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
-    "Germany IPTV",
-    "Best IPTV Germany",
-    "German IPTV",
-    "IPTV Subscription Germany",
-    "Buy IPTV Germany",
-    "Premium IPTV Germany",
     "IPTV Deutschland",
-    "4K IPTV Germany",
+    "Bestes IPTV Deutschland",
+    "Deutsches IPTV",
+    "IPTV Abo Deutschland",
+    "IPTV kaufen Deutschland",
+    "Premium IPTV Deutschland",
+    "IPTV Germany",
+    "4K IPTV Deutschland",
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
@@ -43,15 +43,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_DE",
+    locale: "de_DE",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Premium IPTV Subscription in Germany`,
+    title: `${siteConfig.name} | Premium IPTV-Abo für Deutschland`,
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Premium IPTV Subscription in Germany`,
+    title: `${siteConfig.name} | Premium IPTV-Abo für Deutschland`,
     description: siteConfig.description,
   },
   robots: {
@@ -83,7 +83,7 @@ const organizationJsonLd = {
       contactType: "customer support",
       email: siteConfig.supportEmail,
       areaServed: "DE",
-      availableLanguage: ["English", "German"],
+      availableLanguage: ["German", "English"],
     },
   ],
 };
@@ -91,7 +91,7 @@ const organizationJsonLd = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="de"
       className={`${inter.variable} ${sora.variable} h-full scroll-smooth antialiased`}
     >
       <head>

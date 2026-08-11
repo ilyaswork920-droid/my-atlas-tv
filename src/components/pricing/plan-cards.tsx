@@ -54,7 +54,7 @@ export function PlanCards() {
                 variant={plan.highlighted ? "primary" : "secondary"}
                 className="mt-auto w-full"
               >
-                Subscribe Now
+                Jetzt abonnieren
               </WhatsAppButton>
             </motion.div>
           ))}

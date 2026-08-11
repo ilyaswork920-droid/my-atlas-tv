@@ -9,22 +9,22 @@ const points = [
   {
     icon: Gauge,
     title: "8K Ultra HD",
-    description: "Full 7680×4320 resolution support on compatible devices and channels.",
+    description: "Volle 7680×4320-Auflösung auf kompatiblen Geräten und Kanälen.",
   },
   {
     icon: ShieldHalf,
-    title: "Anti-Freeze Technology",
-    description: "Adaptive bitrate buffering keeps your stream smooth, even on unstable networks.",
+    title: "Anti-Freeze-Technologie",
+    description: "Adaptive Bitratenpufferung hält deinen Stream flüssig, selbst bei instabilen Netzwerken.",
   },
   {
     icon: Server,
-    title: "EU Streaming Servers",
-    description: "Low-latency delivery from European edge nodes for consistently fast streams.",
+    title: "EU-Streaming-Server",
+    description: "Latenzarme Übertragung von europäischen Servern für durchgehend schnelle Streams.",
   },
   {
     icon: Cpu,
     title: "HEVC H.265 Codec",
-    description: "Efficient compression for sharper picture quality at lower bandwidth.",
+    description: "Effiziente Kompression für ein schärferes Bild bei geringerer Bandbreite.",
   },
 ];
 
@@ -34,9 +34,9 @@ export function Infrastructure() {
       <div aria-hidden className="glow-blob left-[-160px] top-1/3 h-[420px] w-[420px] bg-blue-500/15" />
       <div className="container-edge relative flex flex-col gap-14">
         <SectionHeading
-          eyebrow="Infrastructure"
-          title="Engineered for a flawless picture"
-          description="Premium infrastructure behind every stream — built to stay fast, stable and sharp."
+          eyebrow="Infrastruktur"
+          title="Entwickelt für ein makelloses Bild"
+          description="Erstklassige Infrastruktur hinter jedem Stream — schnell, stabil und gestochen scharf."
         />
 
         <RevealGroup className="grid grid-cols-1 gap-px overflow-hidden rounded-3xl border border-white/8 bg-white/8 sm:grid-cols-2 lg:grid-cols-4">

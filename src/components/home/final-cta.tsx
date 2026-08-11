@@ -22,18 +22,18 @@ export function FinalCta() {
           />
           <div className="relative flex flex-col items-center gap-6">
             <h2 className="font-display text-3xl font-bold tracking-tight text-cloud sm:text-4xl">
-              Ready to upgrade your entertainment?
+              Bereit für ein besseres Fernseherlebnis?
             </h2>
             <p className="max-w-xl text-balance text-base text-muted sm:text-lg">
-              Start your free trial today — instant activation, no credit card required, and real
-              support on WhatsApp whenever you need it.
+              Starte noch heute deine kostenlose Testphase — sofortige Aktivierung, keine
+              Kreditkarte nötig, und echter Support auf WhatsApp, wann immer du ihn brauchst.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
               <WhatsAppButton message={trialWhatsAppMessage} size="lg" showArrow>
-                Start Free Trial
+                Kostenlose Testphase starten
               </WhatsAppButton>
               <Button href="/pricing" variant="secondary" size="lg">
-                See Pricing
+                Preise ansehen
               </Button>
             </div>
           </div>

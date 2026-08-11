@@ -10,46 +10,46 @@ const guides = [
   {
     device: "Smart TV (Samsung / LG)",
     steps: [
-      "Open your TV's app store and install an IPTV player app (we'll recommend one).",
-      "Launch the app and select 'Add playlist' or 'Enter Xtream login'.",
-      "Enter the credentials we send you on WhatsApp.",
-      "Save and start browsing your channels.",
+      "Öffne den App Store deines Fernsehers und installiere eine IPTV-Player-App (wir empfehlen dir gerne eine).",
+      "Starte die App und wähle „Playlist hinzufügen“ oder „Xtream-Login eingeben“.",
+      "Gib die Zugangsdaten ein, die wir dir auf WhatsApp schicken.",
+      "Speichern und deine Kanäle durchstöbern.",
     ],
   },
   {
     device: "Amazon Fire TV Stick",
     steps: [
-      "Search for and install the recommended IPTV app from the Amazon App Store.",
-      "Open the app and choose 'Login' or 'Add playlist'.",
-      "Enter your username, password and server URL.",
-      "Confirm and start watching instantly.",
+      "Suche im Amazon App Store nach der empfohlenen IPTV-App und installiere sie.",
+      "Öffne die App und wähle „Login“ oder „Playlist hinzufügen“.",
+      "Gib Benutzername, Passwort und Server-URL ein.",
+      "Bestätigen und sofort loslegen.",
     ],
   },
   {
     device: "Android TV / TV Box",
     steps: [
-      "Install the IPTV app via Google Play or a downloaded APK we provide.",
-      "Open the app and select Xtream Codes login.",
-      "Enter your activation details exactly as sent.",
-      "Tap connect and enjoy your channels.",
+      "Installiere die IPTV-App über Google Play oder eine APK-Datei, die wir dir zur Verfügung stellen.",
+      "Öffne die App und wähle den Xtream-Codes-Login.",
+      "Gib deine Aktivierungsdaten genau wie zugesendet ein.",
+      "Auf „Verbinden“ tippen und deine Kanäle genießen.",
     ],
   },
   {
     device: "iPhone & Android",
     steps: [
-      "Download the recommended IPTV app from the App Store or Google Play.",
-      "Open the app and tap 'Add new user' or 'Login'.",
-      "Enter your credentials and confirm.",
-      "Start streaming on the go, on Wi-Fi or mobile data.",
+      "Lade die empfohlene IPTV-App aus dem App Store oder Google Play herunter.",
+      "Öffne die App und tippe auf „Neuen Nutzer hinzufügen“ oder „Login“.",
+      "Gib deine Zugangsdaten ein und bestätige.",
+      "Streame unterwegs, über WLAN oder mobile Daten.",
     ],
   },
   {
     device: "Windows & Mac",
     steps: [
-      "Download and install the recommended IPTV player for desktop.",
-      "Open the app and select 'Login with Xtream Codes'.",
-      "Enter your username, password and server URL.",
-      "Click connect and start watching on your computer.",
+      "Lade den empfohlenen IPTV-Player für den Desktop herunter und installiere ihn.",
+      "Öffne die App und wähle „Login mit Xtream Codes“.",
+      "Gib Benutzername, Passwort und Server-URL ein.",
+      "Auf „Verbinden“ klicken und auf deinem Computer loslegen.",
     ],
   },
 ];
@@ -60,7 +60,7 @@ export function DeviceGuides() {
   return (
     <section className="relative py-24 sm:py-28">
       <div className="container-edge flex flex-col gap-14">
-        <SectionHeading eyebrow="Quick guides" title="Step-by-step for your device" />
+        <SectionHeading eyebrow="Schnellanleitungen" title="Schritt für Schritt für dein Gerät" />
 
         <Reveal className="mx-auto w-full max-w-3xl">
           <div className="flex flex-col gap-3">

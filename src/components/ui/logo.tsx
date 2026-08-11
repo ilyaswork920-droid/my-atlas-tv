@@ -5,7 +5,7 @@ export function Logo({ className, priority = false }: { className?: string; prio
   return (
     <Image
       src="/brand/logo.png"
-      alt="Atlas TV"
+      alt="IPTV Germany"
       width={360}
       height={240}
       priority={priority}

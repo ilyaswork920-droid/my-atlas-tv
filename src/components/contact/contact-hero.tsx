@@ -17,7 +17,7 @@ export function ContactHero() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-purple-300"
         >
-          Contact
+          Kontakt
         </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
@@ -25,7 +25,7 @@ export function ContactHero() {
           transition={{ duration: 0.6, delay: 0.08 }}
           className="max-w-2xl font-display text-4xl font-bold tracking-tight text-cloud sm:text-5xl"
         >
-          Get in <span className="text-gradient">touch</span>
+          Nimm <span className="text-gradient">Kontakt auf</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
@@ -33,8 +33,8 @@ export function ContactHero() {
           transition={{ duration: 0.6, delay: 0.16 }}
           className="max-w-xl text-balance text-base text-muted sm:text-lg"
         >
-          Questions about plans, setup or billing? Send us a message and we&apos;ll reply on
-          WhatsApp right away.
+          Fragen zu Tarifen, Einrichtung oder Abrechnung? Schick uns eine Nachricht und wir
+          antworten dir sofort auf WhatsApp.
         </motion.p>
       </div>
     </section>

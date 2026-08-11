@@ -6,21 +6,21 @@ import { RevealGroup, revealItem } from "@/components/ui/reveal";
 import { motion } from "framer-motion";
 
 const cities = [
-  "New York",
-  "London",
-  "Paris",
-  "Toronto",
-  "Dubai",
-  "Sydney",
-  "Amsterdam",
-  "Singapore",
+  "Berlin",
+  "München",
+  "Hamburg",
+  "Köln",
+  "Frankfurt",
+  "Stuttgart",
+  "Düsseldorf",
+  "Leipzig",
 ];
 
 const stats = [
-  { value: "2,800+", label: "Customers worldwide" },
-  { value: "4.9/5", label: "Average customer rating" },
-  { value: "15,000+", label: "Live channels included" },
-  { value: "99.9%", label: "Server uptime" },
+  { value: "2.800+", label: "Kunden deutschlandweit" },
+  { value: "4,9/5", label: "Durchschnittliche Kundenbewertung" },
+  { value: "15.000+", label: "Live-Kanäle inklusive" },
+  { value: "99,9%", label: "Server-Verfügbarkeit" },
 ];
 
 export function SocialProof() {
@@ -29,7 +29,7 @@ export function SocialProof() {
       <div className="absolute inset-0">
         <Image
           src="/images/berlin-skyline.jpg"
-          alt="City skyline at night with an iconic TV tower, representing Atlas TV's global streaming coverage"
+          alt="Skyline bei Nacht mit einem markanten Fernsehturm, symbolisch für die deutschlandweite Streaming-Abdeckung von IPTV Germany"
           fill
           className="object-cover opacity-30"
           sizes="100vw"
@@ -39,9 +39,9 @@ export function SocialProof() {
 
       <div className="container-edge relative flex flex-col gap-14">
         <SectionHeading
-          eyebrow="Trusted Worldwide"
-          title="Trusted by streamers in cities around the world"
-          description="From city to city, thousands of customers rely on Atlas TV every day."
+          eyebrow="Deutschlandweit vertraut"
+          title="Das Vertrauen von Streamern in Städten in ganz Deutschland"
+          description="Von Stadt zu Stadt verlassen sich täglich Tausende von Kunden auf IPTV Germany."
         />
 
         <RevealGroup className="mx-auto grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4" stagger={0.06}>

@@ -22,7 +22,7 @@ export function SetupTeaser() {
           <div className="relative overflow-hidden rounded-3xl border border-white/10 shadow-card">
             <Image
               src="/images/setup-tv-wall.jpg"
-              alt="Minimalist wall-mounted smart TV setup, ready for Atlas TV installation"
+              alt="Minimalistischer, wandmontierter Smart-TV, bereit für die Einrichtung von IPTV Germany"
               width={900}
               height={720}
               sizes="(min-width: 1024px) 570px, 90vw"
@@ -34,14 +34,14 @@ export function SetupTeaser() {
         <Reveal direction="right" delay={0.1}>
           <div className="flex flex-col items-start gap-6">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-purple-300">
-              Setup Guide
+              Einrichtung
             </span>
             <h3 className="font-display text-2xl font-bold tracking-tight text-cloud sm:text-3xl">
-              Up and running in under 5 minutes
+              In unter 5 Minuten startklar
             </h3>
             <p className="text-base leading-relaxed text-muted">
-              No technical skills needed. Follow our step-by-step guide for your device, or message
-              us on WhatsApp and we&apos;ll walk you through it live.
+              Keine technischen Kenntnisse nötig. Folge unserer Schritt-für-Schritt-Anleitung für
+              dein Gerät oder schreib uns auf WhatsApp — wir führen dich live durch die Einrichtung.
             </p>
 
             <div className="grid grid-cols-2 gap-3 pt-1">
@@ -58,10 +58,10 @@ export function SetupTeaser() {
 
             <div className="flex flex-wrap gap-3 pt-2">
               <Button href="/setup-guide" showArrow>
-                View Setup Guide
+                Zur Einrichtungsanleitung
               </Button>
               <WhatsAppButton message={setupHelpWhatsAppMessage} variant="secondary">
-                Ask on WhatsApp
+                Auf WhatsApp fragen
               </WhatsAppButton>
             </div>
           </div>

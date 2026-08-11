@@ -17,7 +17,7 @@ export function SetupHero() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-purple-300"
         >
-          Setup Guide
+          Einrichtung
         </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
@@ -25,7 +25,7 @@ export function SetupHero() {
           transition={{ duration: 0.6, delay: 0.08 }}
           className="max-w-2xl font-display text-4xl font-bold tracking-tight text-cloud sm:text-5xl"
         >
-          Get streaming in <span className="text-gradient">under 5 minutes</span>
+          In <span className="text-gradient">unter 5 Minuten</span> startklar
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
@@ -33,8 +33,8 @@ export function SetupHero() {
           transition={{ duration: 0.6, delay: 0.16 }}
           className="max-w-xl text-balance text-base text-muted sm:text-lg"
         >
-          No technical experience required. Follow these steps on any supported device, or let our
-          team set it up with you live on WhatsApp.
+          Keine technischen Vorkenntnisse nötig. Folge diesen Schritten auf jedem unterstützten
+          Gerät, oder lass dir von unserem Team live auf WhatsApp helfen.
         </motion.p>
       </div>
     </section>

@@ -8,37 +8,37 @@ import { planWhatsAppMessage } from "@/lib/site-config";
 
 const blocks = [
   {
-    eyebrow: "8K Experience",
-    title: "Cinema-grade picture, right in your living room",
+    eyebrow: "8K-Erlebnis",
+    title: "Kinoreifes Bild, direkt in deinem Wohnzimmer",
     description:
-      "Stream in true 8K Ultra HD on supported channels and devices, with adaptive bitrate so quality never drops when your connection dips.",
+      "Streame in echtem 8K Ultra HD auf unterstützten Kanälen und Geräten, mit adaptiver Bitrate, damit die Qualität auch bei schwankender Verbindung nie einbricht.",
     image: "/images/cinema-seats.jpg",
-    alt: "Empty cinema hall with premium red seating representing 8K Ultra HD picture quality",
+    alt: "Leerer Kinosaal mit hochwertigen roten Sitzen als Symbol für 8K Ultra HD Bildqualität",
     bullets: [
-      "8K, 4K & Full HD tiers on every plan",
-      "10 Mbps minimum for HD, 50+ Mbps for 8K",
-      "HEVC H.265 for a sharper picture at lower data",
+      "8K, 4K & Full HD in jedem Tarif enthalten",
+      "10 Mbit/s minimum für HD, 50+ Mbit/s für 8K",
+      "HEVC H.265 für ein schärferes Bild bei weniger Datenverbrauch",
     ],
     reverse: false,
     planId: "plus",
-    planName: "Plus",
+    planName: "2 Bildschirme – 12 Monate",
     price: 45,
   },
   {
-    eyebrow: "Channel Library",
-    title: "15,000+ channels, one simple subscription",
+    eyebrow: "Senderbibliothek",
+    title: "15.000+ Kanäle, ein einfaches Abo",
     description:
-      "Local and international entertainment, sports, news and kids channels — all organised in a clean, fast programme guide.",
+      "Lokale und internationale Unterhaltung, Sport, Nachrichten und Kinderkanäle — alles übersichtlich in einem schnellen Programmführer organisiert.",
     image: "/images/content-landscape-tv.jpg",
-    alt: "Large smart TV displaying vivid content in a bright modern living room",
+    alt: "Großer Smart-TV mit lebendigen Inhalten in einem hellen, modernen Wohnzimmer",
     bullets: [
-      "Local broadcast channels included on every plan",
-      "International entertainment, news & kids categories",
-      "7-day EPG so you never miss what's on",
+      "Lokale Sender in jedem Tarif enthalten",
+      "Internationale Unterhaltung, Nachrichten & Kinderkategorien",
+      "7-Tage-EPG, damit du nie etwas verpasst",
     ],
     reverse: true,
     planId: "basic",
-    planName: "Basic",
+    planName: "1 Bildschirm – 12 Monate",
     price: 30,
   },
 ];
@@ -93,7 +93,7 @@ export function ContentShowcase() {
                     variant="secondary"
                     showArrow
                   >
-                    Learn more
+                    Mehr erfahren
                   </WhatsAppButton>
                 </div>
               </div>

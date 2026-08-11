@@ -8,33 +8,33 @@ import { RevealGroup, revealItem } from "@/components/ui/reveal";
 const features = [
   {
     icon: Radio,
-    title: "Live TV",
-    description: "15,000+ live channels covering global, regional and international broadcasts.",
+    title: "Live-TV",
+    description: "15.000+ Live-Kanäle mit globalen, regionalen und internationalen Sendungen.",
   },
   {
     icon: Clapperboard,
-    title: "Movies On-Demand",
-    description: "A constantly updated library of blockbuster and classic films in HD & 4K.",
+    title: "Filme on demand",
+    description: "Eine ständig aktualisierte Bibliothek mit Blockbustern und Klassikern in HD & 4K.",
   },
   {
     icon: Film,
-    title: "Series & Shows",
-    description: "Instant access to full seasons of the shows you love, no waiting required.",
+    title: "Serien & Shows",
+    description: "Sofortiger Zugriff auf ganze Staffeln deiner Lieblingsserien, ganz ohne Wartezeit.",
   },
   {
     icon: Trophy,
-    title: "Sports Channels",
-    description: "Top leagues, Champions League and global sports on dedicated plans.",
+    title: "Sportkanäle",
+    description: "Top-Ligen, Champions League und internationaler Sport in dedizierten Tarifen.",
   },
   {
     icon: RotateCcw,
-    title: "7-Day Catch-Up",
-    description: "Missed something? Rewind and replay up to 7 days of broadcasts.",
+    title: "7-Tage-Wiederholung",
+    description: "Etwas verpasst? Spule zurück und sieh dir bis zu 7 Tage alte Sendungen erneut an.",
   },
   {
     icon: CalendarClock,
-    title: "Smart EPG Guide",
-    description: "A clean electronic programme guide to plan and browse what's on next.",
+    title: "Intelligenter EPG-Guide",
+    description: "Ein übersichtlicher Programmführer, um zu planen und zu entdecken, was als Nächstes läuft.",
   },
 ];
 
@@ -43,9 +43,9 @@ export function StreamingFeatures() {
     <section className="relative py-24 sm:py-28">
       <div className="container-edge flex flex-col gap-14">
         <SectionHeading
-          eyebrow="What you get"
-          title="Next-generation streaming, built for everyone"
-          description="Everything you need for premium entertainment — live, on-demand and always in high quality."
+          eyebrow="Das erwartet dich"
+          title="Streaming der nächsten Generation, für alle gemacht"
+          description="Alles, was du für erstklassige Unterhaltung brauchst — live, on demand und immer in hoher Qualität."
         />
 
         <RevealGroup className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3" stagger={0.08}>

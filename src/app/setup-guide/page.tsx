@@ -7,14 +7,14 @@ import { SetupHelpCta } from "@/components/setup/setup-help-cta";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "IPTV Setup Guide | Install on Smart TV, Fire Stick, Mobile & PC",
+  title: "IPTV Einrichtungsanleitung | Smart TV, Fire Stick, Handy & PC",
   description:
-    "Step-by-step IPTV Germany setup guide for Samsung, LG, Fire TV Stick, Android TV, iPhone, Android and PC. Get streaming in under 5 minutes with WhatsApp support.",
+    "Schritt-für-Schritt IPTV Germany Einrichtungsanleitung für Samsung, LG, Fire TV Stick, Android TV, iPhone, Android und PC. In unter 5 Minuten streamen, mit WhatsApp-Support.",
   alternates: { canonical: "/setup-guide" },
   openGraph: {
-    title: "IPTV Setup Guide | Install on Smart TV, Fire Stick, Mobile & PC",
+    title: "IPTV Einrichtungsanleitung | Smart TV, Fire Stick, Handy & PC",
     description:
-      "Step-by-step IPTV Germany setup guide for every device. Get streaming in under 5 minutes.",
+      "Schritt-für-Schritt IPTV Germany Einrichtungsanleitung für jedes Gerät. In unter 5 Minuten streamen.",
     url: `${siteConfig.url}/setup-guide`,
   },
 };

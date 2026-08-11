@@ -5,13 +5,11 @@ import { Reveal } from "@/components/ui/reveal";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description:
-    "Politique de confidentialité du site Atlas TV (myatlastv.com) : données collectées, finalités, base légale et droits RGPD.",
+  description: `Politique de confidentialité du site ${siteConfig.name} (${siteConfig.domain}) : données collectées, finalités, base légale et droits RGPD.`,
   alternates: { canonical: "/privacy-policy" },
   openGraph: {
     title: `Privacy Policy | ${siteConfig.name}`,
-    description:
-      "Politique de confidentialité du site Atlas TV (myatlastv.com) : données collectées, finalités, base légale et droits RGPD.",
+    description: `Politique de confidentialité du site ${siteConfig.name} (${siteConfig.domain}) : données collectées, finalités, base légale et droits RGPD.`,
     url: `${siteConfig.url}/privacy-policy`,
   },
 };

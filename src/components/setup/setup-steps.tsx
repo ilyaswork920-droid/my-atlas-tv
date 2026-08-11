@@ -8,23 +8,23 @@ import { SectionHeading } from "@/components/ui/section-heading";
 const steps = [
   {
     icon: MessageCircle,
-    title: "Subscribe on WhatsApp",
-    description: "Message us your chosen plan and we'll confirm your subscription instantly.",
+    title: "Auf WhatsApp abonnieren",
+    description: "Schreib uns deinen gewählten Tarif und wir bestätigen dein Abo sofort.",
   },
   {
     icon: KeyRound,
-    title: "Receive your credentials",
-    description: "Get your activation details and app download link straight away.",
+    title: "Zugangsdaten erhalten",
+    description: "Erhalte deine Aktivierungsdaten und den App-Download-Link umgehend.",
   },
   {
     icon: Download,
-    title: "Install the app",
-    description: "Download and install the IPTV player on your TV, phone or computer.",
+    title: "App installieren",
+    description: "Lade den IPTV-Player herunter und installiere ihn auf deinem TV, Handy oder Computer.",
   },
   {
     icon: PlayCircle,
-    title: "Start watching",
-    description: "Enter your credentials once and start streaming immediately.",
+    title: "Losschauen",
+    description: "Gib deine Zugangsdaten einmal ein und starte sofort mit dem Streaming.",
   },
 ];
 
@@ -32,7 +32,7 @@ export function SetupSteps() {
   return (
     <section className="relative py-8 sm:py-10">
       <div className="container-edge flex flex-col gap-14">
-        <SectionHeading eyebrow="How it works" title="Four simple steps" />
+        <SectionHeading eyebrow="So funktioniert's" title="Vier einfache Schritte" />
 
         <RevealGroup className="relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4" stagger={0.1}>
           <div
