@@ -28,65 +28,70 @@ export const navLinks = [
 export type Plan = {
   id: string;
   name: string;
-  tagline: string;
-  price: number;
-  period: string;
-  badge?: string;
+  duration: string;
   devices: string;
-  features: string[];
+  price: number;
+  oldPrice: number;
+  badge?: string;
   highlighted?: boolean;
+  features: string[];
 };
+
+const baseFeatures = [
+  "+55.000 globale Live-Kanäle",
+  "+90.000 Filme und Serien",
+  "Alle deutschen Premium-Sender",
+  "Alle deutschen Premium-Sportsender",
+  "Alle lokalen & globalen Plattformen",
+  "Time-Shift & EPG-Guide",
+  "Qualität in SD, HD, FHD und 4K",
+  "Tägliche Updates",
+  "Anti-Freeze™-Technologie",
+  "Kein VPN erforderlich (VPN inklusive)",
+];
 
 export const plans: Plan[] = [
   {
-    id: "basic",
-    name: "1 Bildschirm – 12 Monate",
-    tagline: "Perfekt für den Einstieg",
-    price: 30,
-    period: "/Jahr",
-    devices: "1 Gerät gleichzeitig",
+    id: "3-months",
+    name: "Premium Paket",
+    duration: "3 Monate",
+    devices: "1 Gerät",
+    price: 29,
+    oldPrice: 59,
     features: [
-      "15.000+ Live-Kanäle",
-      "Lokale & internationale Sender",
-      "Full HD & 4K Streaming",
-      "7-Tage EPG Programmführer",
-      "Stabile, unterbrechungsfreie Server",
-      "24/7 WhatsApp-Support",
+      ...baseFeatures,
+      "15 Tage Geld-zurück-Garantie",
+      "24/7 WhatsApp & E-Mail Support",
     ],
   },
   {
-    id: "plus",
-    name: "2 Bildschirme – 12 Monate",
-    tagline: "Unser beliebtester Tarif",
-    price: 45,
-    period: "/Jahr",
-    badge: "Beliebteste Wahl",
-    devices: "2 Geräte gleichzeitig",
+    id: "12-months",
+    name: "Premium Paket ++",
+    duration: "12 Monate",
+    devices: "1 Gerät",
+    price: 59,
+    oldPrice: 99,
+    badge: "BESTSELLER",
     highlighted: true,
     features: [
-      "Alles aus 1 Bildschirm, plus:",
-      "8K Ultra HD Streaming",
-      "7 Tage Catch-up TV & Wiederholung",
-      "Arabisches Senderpaket",
-      "Priorisierte EU-Streaming-Server",
-      "Priorisierter WhatsApp-Support",
+      ...baseFeatures,
+      "30 Tage Geld-zurück-Garantie",
+      "6 Monate Bonus",
+      "24/7 WhatsApp & E-Mail Support",
     ],
   },
   {
-    id: "premium",
-    name: "3 Bildschirme – 12 Monate",
-    tagline: "Das volle Erlebnis",
-    price: 55,
-    period: "/Jahr",
-    badge: "Bester Wert",
-    devices: "3 Geräte gleichzeitig",
+    id: "6-months",
+    name: "Premium Paket +",
+    duration: "6 Monate",
+    devices: "1 Gerät",
+    price: 39,
+    oldPrice: 79,
     features: [
-      "Alles aus 2 Bildschirme, plus:",
-      "Komplettes Sportpaket",
-      "VIP-Support-Hotline",
-      "Früher Zugang zu neuen Sendern",
-      "Höchste Serverpriorität",
-      "Kostenlose Einrichtungshilfe",
+      ...baseFeatures,
+      "30 Tage Geld-zurück-Garantie",
+      "3 Monate Bonus",
+      "24/7 WhatsApp & E-Mail Support",
     ],
   },
 ];
@@ -96,8 +101,8 @@ export function buildWhatsAppUrl(message: string) {
   return `https://wa.me/${siteConfig.whatsapp.numberIntl}?text=${encoded}`;
 }
 
-export function planWhatsAppMessage(planName: string, price: number) {
-  return `Hallo! Ich interessiere mich für den Tarif "${planName}" (€${price}/Jahr) auf ${siteConfig.domain}. Könnt ihr mir helfen, loszulegen?`;
+export function planWhatsAppMessage(planName: string, duration: string, price: number) {
+  return `Hallo! Ich interessiere mich für den Tarif "${planName}" (${duration}, €${price}) auf ${siteConfig.domain}. Könnt ihr mir helfen, loszulegen?`;
 }
 
 export const trialWhatsAppMessage = `Hallo! Ich möchte gerne meine kostenlose Testphase bei ${siteConfig.name} starten. Könnt ihr mir die Details schicken?`;

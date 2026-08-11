@@ -20,9 +20,10 @@ const blocks = [
       "HEVC H.265 für ein schärferes Bild bei weniger Datenverbrauch",
     ],
     reverse: false,
-    planId: "plus",
-    planName: "2 Bildschirme – 12 Monate",
-    price: 45,
+    planId: "12-months",
+    planName: "Premium Paket ++",
+    duration: "12 Monate",
+    price: 59,
   },
   {
     eyebrow: "Senderbibliothek",
@@ -37,9 +38,10 @@ const blocks = [
       "7-Tage-EPG, damit du nie etwas verpasst",
     ],
     reverse: true,
-    planId: "basic",
-    planName: "1 Bildschirm – 12 Monate",
-    price: 30,
+    planId: "12-months",
+    planName: "Premium Paket ++",
+    duration: "12 Monate",
+    price: 59,
   },
 ];
 
@@ -89,7 +91,7 @@ export function ContentShowcase() {
                 </ul>
                 <div className="pt-2">
                   <WhatsAppButton
-                    message={planWhatsAppMessage(block.planName, block.price)}
+                    message={planWhatsAppMessage(block.planName, block.duration, block.price)}
                     variant="secondary"
                     showArrow
                   >

@@ -39,11 +39,15 @@ export function PricingTeaser() {
               )}
               <div>
                 <h3 className="font-display text-xl font-bold text-cloud">{plan.name}</h3>
-                <p className="mt-1 text-sm text-muted">{plan.tagline}</p>
+                <p className="mt-1 text-sm text-muted">
+                  {plan.duration} · {plan.devices}
+                </p>
               </div>
-              <div className="flex items-baseline gap-1">
+              <div className="flex items-baseline gap-2">
                 <span className="font-display text-4xl font-bold text-cloud">€{plan.price}</span>
-                <span className="text-sm text-muted">{plan.period}</span>
+                <span className="text-base font-medium text-muted-dark line-through">
+                  €{plan.oldPrice}
+                </span>
               </div>
               <ul className="flex flex-col gap-3">
                 {plan.features.slice(0, 4).map((f) => (
@@ -54,7 +58,7 @@ export function PricingTeaser() {
                 ))}
               </ul>
               <WhatsAppButton
-                message={planWhatsAppMessage(plan.name, plan.price)}
+                message={planWhatsAppMessage(plan.name, plan.duration, plan.price)}
                 variant={plan.highlighted ? "primary" : "secondary"}
                 className="mt-auto w-full"
               >

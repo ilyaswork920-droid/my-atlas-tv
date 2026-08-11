@@ -1,62 +1,82 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, Users } from "lucide-react";
+import { Check, MessageCircle, Plus } from "lucide-react";
 import { RevealGroup, revealItem } from "@/components/ui/reveal";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
-import { plans, planWhatsAppMessage } from "@/lib/site-config";
+import { plans, planWhatsAppMessage, type Plan } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
+
+function FeatureIcon({ text }: { text: string }) {
+  if (text.includes("WhatsApp")) {
+    return <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />;
+  }
+  if (text.includes("Bonus")) {
+    return <Plus className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />;
+  }
+  return <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />;
+}
+
+function PlanCard({ plan }: { plan: Plan }) {
+  return (
+    <motion.div
+      variants={revealItem}
+      whileHover={{ y: -6 }}
+      className={cn(
+        "relative flex h-full flex-col gap-6 rounded-3xl border p-8 transition-colors duration-300",
+        plan.highlighted
+          ? "border-purple-400/50 bg-navy-900 shadow-glow-purple lg:-translate-y-3"
+          : "border-white/10 bg-navy-900/50 hover:border-white/20"
+      )}
+    >
+      {plan.badge && (
+        <span className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow-glow-purple">
+          {plan.badge}
+        </span>
+      )}
+
+      <div className="flex flex-col gap-1.5">
+        <span className="text-xs font-semibold uppercase tracking-[0.14em] text-purple-300">
+          {plan.duration} · {plan.devices}
+        </span>
+        <h3 className="font-display text-xl font-bold text-cloud">{plan.name}</h3>
+      </div>
+
+      <div className="flex items-baseline gap-3">
+        <span className="font-display text-4xl font-bold text-cloud">€{plan.price}</span>
+        <span className="text-lg font-medium text-muted-dark line-through">€{plan.oldPrice}</span>
+      </div>
+
+      <ul className="flex flex-col gap-3 border-t border-white/8 pt-6">
+        {plan.features.map((f) => (
+          <li key={f} className="flex items-start gap-2.5 text-sm text-mist">
+            <FeatureIcon text={f} />
+            {f}
+          </li>
+        ))}
+      </ul>
+
+      <WhatsAppButton
+        message={planWhatsAppMessage(plan.name, plan.duration, plan.price)}
+        variant={plan.highlighted ? "primary" : "secondary"}
+        className="mt-auto w-full"
+      >
+        Jetzt kaufen
+      </WhatsAppButton>
+    </motion.div>
+  );
+}
 
 export function PlanCards() {
   return (
     <section className="relative py-8 sm:py-10">
       <div className="container-edge">
-        <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" stagger={0.08}>
+        <RevealGroup
+          className="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          stagger={0.08}
+        >
           {plans.map((plan) => (
-            <motion.div
-              key={plan.id}
-              variants={revealItem}
-              whileHover={{ y: -6 }}
-              className={cn(
-                "relative flex flex-col gap-6 rounded-3xl border p-8",
-                plan.highlighted
-                  ? "border-purple-400/40 bg-navy-900 shadow-glow-purple lg:-translate-y-3"
-                  : "border-white/8 bg-navy-900/50"
-              )}
-            >
-              {plan.badge && (
-                <span className="absolute -top-3 left-8 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
-                  {plan.badge}
-                </span>
-              )}
-              <div>
-                <h3 className="font-display text-xl font-bold text-cloud">{plan.name}</h3>
-                <p className="mt-1 text-sm text-muted">{plan.tagline}</p>
-              </div>
-              <div className="flex items-baseline gap-1">
-                <span className="font-display text-4xl font-bold text-cloud">€{plan.price}</span>
-                <span className="text-sm text-muted">{plan.period}</span>
-              </div>
-              <div className="flex items-center gap-2 text-xs text-muted">
-                <Users className="h-3.5 w-3.5" />
-                {plan.devices}
-              </div>
-              <ul className="flex flex-col gap-3 border-t border-white/8 pt-5">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-mist">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-purple-400" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <WhatsAppButton
-                message={planWhatsAppMessage(plan.name, plan.price)}
-                variant={plan.highlighted ? "primary" : "secondary"}
-                className="mt-auto w-full"
-              >
-                Jetzt abonnieren
-              </WhatsAppButton>
-            </motion.div>
+            <PlanCard key={plan.id} plan={plan} />
           ))}
         </RevealGroup>
       </div>
