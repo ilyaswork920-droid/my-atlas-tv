@@ -14,7 +14,7 @@ const cable = [
 ];
 
 const iptv = [
-  "Ab €30 pro Jahr",
+  "Pakete bereits ab €29",
   "Keine langfristige Vertragsbindung",
   "15.000+ Kanäle inklusive",
   "Funktioniert auf Geräten, die du bereits besitzt",
@@ -27,7 +27,7 @@ export function PriceComparison() {
       <div className="container-edge flex flex-col gap-14">
         <SectionHeading
           eyebrow="Warum wechseln"
-          title="Bis zu €690 pro Jahr sparen gegenüber Kabel & Satellit"
+          title="Bis zu €660 pro Jahr sparen gegenüber Kabel & Satellit"
           description="Klassisches Fernsehen bindet dich an teure Verträge. IPTV Germany nicht."
         />
 
@@ -76,7 +76,7 @@ export function PriceComparison() {
           className="text-center text-sm text-muted"
         >
           Geschätzte jährliche Ersparnis basierend auf durchschnittlichen Kabel-/Satellitenpreisen
-          von €60+/Monat gegenüber unserem 1-Bildschirm-Tarif ab €30/Jahr.
+          von €60+/Monat gegenüber unserem 12-Monats-Paket ab €59/Jahr.
         </motion.p>
       </div>
     </section>

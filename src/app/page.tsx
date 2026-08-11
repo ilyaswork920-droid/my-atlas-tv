@@ -13,12 +13,12 @@ import { FinalCta } from "@/components/home/final-cta";
 import { siteConfig, plans } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "IPTV Germany | Premium IPTV-Abo ab €30/Jahr",
+  title: "IPTV Germany | Premium IPTV-Abo ab €29",
   description:
     "Streame mit IPTV Germany: 15.000+ Live-Kanäle, HD/4K/8K-Streaming, erstklassige internationale Inhalte. Sofortige Aktivierung, 24/7 WhatsApp-Support. Kostenlose Testphase verfügbar.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "IPTV Germany | Premium IPTV-Abo ab €30/Jahr",
+    title: "IPTV Germany | Premium IPTV-Abo ab €29",
     description:
       "Streame mit IPTV Germany: 15.000+ Live-Kanäle, HD/4K/8K-Streaming, erstklassige internationale Inhalte. Sofortige Aktivierung, 24/7 WhatsApp-Support.",
     url: siteConfig.url,

@@ -60,7 +60,7 @@ export function Hero() {
           >
             Das beste IPTV-Abo für Deutschland: 15.000+ Live-Kanäle, erstklassige internationale
             Inhalte, stabile Streaming-Server und sofortige Aktivierung — schon ab{" "}
-            <span className="font-semibold text-cloud">€30/Jahr</span>.
+            <span className="font-semibold text-cloud">€29</span>.
           </motion.p>
 
           <motion.div
