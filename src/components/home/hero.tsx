@@ -33,9 +33,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 py-1.5 pl-1.5 pr-4 text-xs font-medium text-mist"
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 py-1.5 pl-1.5 pr-4 text-xs font-medium text-mist shadow-card"
           >
-            <span className="flex items-center gap-1 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-2.5 py-1 text-white">
+            <span className="flex items-center gap-1 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-2.5 py-1 text-white shadow-glow-purple">
               <Star className="h-3 w-3 fill-white" />
               4.9/5
             </span>
@@ -113,7 +113,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="relative mx-auto w-full max-w-md lg:max-w-none"
         >
-          <div className="relative overflow-hidden rounded-[28px] border border-white/10 shadow-card">
+          <div className="relative overflow-hidden rounded-[28px] border border-white/15 shadow-card-hover ring-1 ring-black/20">
             <Image
               src="/images/hero-tv-wall.jpg"
               alt="Modernes Wohnzimmer mit einem Premium-Smart-TV, der IPTV Germany-Kanäle streamt"

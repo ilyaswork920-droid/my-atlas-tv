@@ -21,16 +21,17 @@ function PlanCard({ plan }: { plan: Plan }) {
   return (
     <motion.div
       variants={revealItem}
-      whileHover={{ y: -6 }}
+      whileHover={{ y: -8 }}
+      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
       className={cn(
-        "relative flex h-full flex-col gap-6 rounded-3xl border p-8 transition-colors duration-300",
+        "relative flex h-full flex-col gap-6 rounded-3xl border p-8 transition-all duration-300 ease-premium",
         plan.highlighted
           ? "border-purple-400/50 bg-navy-900 shadow-glow-purple lg:-translate-y-3"
-          : "border-white/10 bg-navy-900/50 hover:border-white/20"
+          : "border-white/10 bg-navy-900/50 shadow-card hover:border-white/25 hover:shadow-card-hover"
       )}
     >
       {plan.badge && (
-        <span className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow-glow-purple">
+        <span className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow-glow-purple ring-1 ring-white/20">
           {plan.badge}
         </span>
       )}
