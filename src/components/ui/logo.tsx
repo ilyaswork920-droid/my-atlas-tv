@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 export function Logo({ className, priority = false }: { className?: string; priority?: boolean }) {
   return (
     <Image
-      src="/brand/logo.png"
+      src="/brand/logo.png?v=2"
       alt="IPTV Germany"
       width={360}
       height={240}
