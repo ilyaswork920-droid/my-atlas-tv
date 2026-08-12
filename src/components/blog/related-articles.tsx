@@ -15,8 +15,8 @@ export function RelatedArticles({ article }: { article: BlogArticle }) {
   return (
     <section className="relative py-14 sm:py-16">
       <div className="container-edge">
-        <div className="mx-auto max-w-4xl" lang="fr">
-          <SectionHeading eyebrow="À lire aussi" title="Articles liés" align="left" />
+        <div className="mx-auto max-w-4xl" lang="de">
+          <SectionHeading eyebrow="Auch interessant" title="Weiterführende Artikel" align="left" />
           <RevealGroup className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2" stagger={0.06}>
             {related.map((r) => (
               <motion.div key={r.slug} variants={revealItem}>
@@ -33,7 +33,7 @@ export function RelatedArticles({ article }: { article: BlogArticle }) {
                     </p>
                   </div>
                   <span className="inline-flex items-center gap-1 text-sm text-muted transition-colors group-hover:text-white">
-                    Lire l&apos;article
+                    Artikel lesen
                     <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
                 </Link>

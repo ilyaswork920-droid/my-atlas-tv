@@ -5,16 +5,16 @@ import { RevealGroup } from "@/components/ui/reveal";
 import { BlogCard } from "@/components/blog/blog-card";
 
 export const metadata: Metadata = {
-  title: "Blog IPTV France | Guides, comparatifs et conseils",
+  title: "IPTV Blog Deutschland | Ratgeber, Vergleiche und Tipps",
   description:
-    "Guides, comparatifs et conseils pratiques sur l'IPTV en France : abonnements, Smart TV, installation, qualité 4K, sport et légalité, expliqués simplement.",
+    "Ratgeber, Vergleiche und praktische Tipps rund um IPTV in Deutschland: Anbieter, Smart-TV, Einrichtung, 4K-Qualität, Sport und Legalität, verständlich erklärt.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Blog IPTV France | Guides, comparatifs et conseils",
+    title: "IPTV Blog Deutschland | Ratgeber, Vergleiche und Tipps",
     description:
-      "Guides, comparatifs et conseils pratiques sur l'IPTV en France, expliqués simplement.",
+      "Ratgeber, Vergleiche und praktische Tipps rund um IPTV in Deutschland, verständlich erklärt.",
     url: `${siteConfig.url}/blog`,
-    locale: "fr_FR",
+    locale: "de_DE",
   },
 };
 
@@ -25,14 +25,14 @@ export default function BlogIndexPage() {
       <div aria-hidden className="h-24 bg-black" />
 
       <section className="bg-white pb-24 pt-14 sm:pb-28 sm:pt-16">
-        <div className="container-edge" lang="fr">
+        <div className="container-edge" lang="de">
           <div className="flex flex-col gap-3 pb-12 sm:pb-16">
             <h1 className="font-display text-5xl font-bold tracking-tight text-neutral-950 sm:text-6xl lg:text-7xl">
-              BLOGS
+              BLOG
             </h1>
             <p className="max-w-xl text-balance text-base text-neutral-500 sm:text-lg">
-              Guides, comparatifs et réponses concrètes pour comprendre l&apos;IPTV, choisir son
-              abonnement et l&apos;installer sans accroc.
+              Ratgeber, Vergleiche und konkrete Antworten, um IPTV zu verstehen, das passende
+              Abo zu wählen und es reibungslos einzurichten.
             </p>
           </div>
 

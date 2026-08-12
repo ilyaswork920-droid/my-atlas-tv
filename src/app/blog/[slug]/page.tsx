@@ -30,7 +30,7 @@ export async function generateMetadata({
       title: article.title,
       description: article.metaDescription,
       url: `${siteConfig.url}/blog/${article.slug}`,
-      locale: "fr_FR",
+      locale: "de_DE",
       type: "article",
     },
     twitter: {
@@ -55,7 +55,7 @@ export default async function BlogArticlePage({
     "@type": "Article",
     headline: article.h1,
     description: article.metaDescription,
-    inLanguage: "fr",
+    inLanguage: "de",
     about: article.keyword,
     articleSection: clusterLabel(article.cluster),
     publisher: {

@@ -23,8 +23,8 @@ export function ArticleFaq({ article }: { article: BlogArticle }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="container-edge">
-        <div className="mx-auto max-w-2xl" lang="fr">
-          <SectionHeading eyebrow="FAQ" title="Questions fréquentes" align="left" />
+        <div className="mx-auto max-w-2xl" lang="de">
+          <SectionHeading eyebrow="FAQ" title="Häufig gestellte Fragen" align="left" />
           <div className="mt-8 flex flex-col gap-4">
             {article.faq.map((item, i) => (
               <Reveal key={i} delay={i * 0.05}>

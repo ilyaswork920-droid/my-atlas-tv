@@ -5,7 +5,7 @@ export function ArticleBody({ article }: { article: BlogArticle }) {
   return (
     <section className="relative py-4 sm:py-6">
       <div className="container-edge">
-        <div className="mx-auto flex max-w-2xl flex-col gap-12" lang="fr">
+        <div className="mx-auto flex max-w-2xl flex-col gap-12" lang="de">
           {article.sections.map((section, i) => (
             <Reveal key={i}>
               <div className="flex flex-col gap-4">

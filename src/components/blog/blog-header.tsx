@@ -14,10 +14,10 @@ export function BlogHeader({ article }: { article: BlogArticle }) {
         aria-hidden
         className="glow-blob left-1/2 top-[-220px] h-[460px] w-[680px] -translate-x-1/2 bg-purple-600/25"
       />
-      <div className="container-edge relative flex flex-col items-start gap-5" lang="fr">
-        <nav aria-label="Fil d'Ariane" className="flex items-center gap-2 text-xs text-muted">
+      <div className="container-edge relative flex flex-col items-start gap-5" lang="de">
+        <nav aria-label="Brotkrümelnavigation" className="flex items-center gap-2 text-xs text-muted">
           <Link href="/" className="transition-colors hover:text-white">
-            Home
+            Startseite
           </Link>
           <span>/</span>
           <Link href="/blog" className="transition-colors hover:text-white">
@@ -38,7 +38,7 @@ export function BlogHeader({ article }: { article: BlogArticle }) {
           </motion.span>
           {article.pillar && (
             <span className="inline-flex items-center gap-1.5 rounded-full border border-purple-400/30 bg-purple-500/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-purple-300">
-              Guide de référence
+              Ratgeber
             </span>
           )}
         </div>
