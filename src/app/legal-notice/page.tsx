@@ -4,63 +4,63 @@ import { siteConfig } from "@/lib/site-config";
 import { Reveal } from "@/components/ui/reveal";
 
 export const metadata: Metadata = {
-  title: "Legal Notice",
-  description: `Mentions légales du site ${siteConfig.name} (${siteConfig.domain}) : éditeur, hébergement, propriété intellectuelle et informations de contact.`,
+  title: "Rechtliche Hinweise",
+  description: `Rechtliche Hinweise zur Website ${siteConfig.name} (${siteConfig.domain}): Betreiber, Hosting, geistiges Eigentum und Kontaktinformationen.`,
   alternates: { canonical: "/legal-notice" },
   openGraph: {
-    title: `Legal Notice | ${siteConfig.name}`,
-    description: `Mentions légales du site ${siteConfig.name} (${siteConfig.domain}) : éditeur, hébergement, propriété intellectuelle et informations de contact.`,
+    title: `Rechtliche Hinweise | ${siteConfig.name}`,
+    description: `Rechtliche Hinweise zur Website ${siteConfig.name} (${siteConfig.domain}): Betreiber, Hosting, geistiges Eigentum und Kontaktinformationen.`,
     url: `${siteConfig.url}/legal-notice`,
   },
 };
 
 const sections = [
   {
-    h2: "Éditeur du site",
+    h2: "Betreiber der Website",
     body: [
-      `Le site ${siteConfig.domain} est édité par ${siteConfig.name}. Les informations d'identification complètes de l'éditeur peuvent être communiquées sur demande à l'adresse ${siteConfig.supportEmail}.`,
+      `Die Website ${siteConfig.domain} wird von ${siteConfig.name} betrieben. Vollständige Angaben zum Betreiber können auf Anfrage unter ${siteConfig.supportEmail} mitgeteilt werden.`,
     ],
   },
   {
-    h2: "Directeur de la publication",
+    h2: "Verantwortlich für den Inhalt",
     body: [
-      `La direction de la publication du site est assurée par ${siteConfig.name}, joignable à l'adresse indiquée dans la rubrique « Contact » ci-dessous.`,
+      `Die inhaltliche Verantwortung für die Website liegt bei ${siteConfig.name}, erreichbar über die im Abschnitt „Kontakt" unten angegebene Adresse.`,
     ],
   },
   {
-    h2: "Hébergement",
+    h2: "Hosting",
     body: [
-      "Ce site est hébergé par Vercel Inc., fournisseur d'infrastructure cloud. Vercel assure l'hébergement technique du contenu du site et n'intervient pas dans son contenu éditorial.",
+      "Diese Website wird von Vercel Inc., einem Anbieter von Cloud-Infrastruktur, gehostet. Vercel übernimmt ausschließlich das technische Hosting der Inhalte und hat keinen Einfluss auf die redaktionellen Inhalte der Website.",
     ],
   },
   {
-    h2: "Propriété intellectuelle",
+    h2: "Geistiges Eigentum",
     body: [
-      `L'ensemble des contenus présents sur ce site — textes, graphismes, logo et marque ${siteConfig.name} — est la propriété de ${siteConfig.name}, sauf mention contraire, et ne peut être reproduit sans autorisation écrite préalable.`,
+      `Sämtliche Inhalte dieser Website — Texte, Grafiken, Logo und die Marke ${siteConfig.name} — sind, sofern nicht anders angegeben, Eigentum von ${siteConfig.name} und dürfen ohne vorherige schriftliche Genehmigung nicht vervielfältigt werden.`,
     ],
   },
   {
-    h2: "Données personnelles",
+    h2: "Personenbezogene Daten",
     body: [
-      "Le traitement des données personnelles collectées sur ce site est détaillé dans notre Politique de Confidentialité, accessible depuis le pied de page du site.",
+      "Die Verarbeitung der auf dieser Website erhobenen personenbezogenen Daten ist in unserer Datenschutzerklärung beschrieben, die über die Fußzeile der Website erreichbar ist.",
     ],
   },
   {
-    h2: "Responsabilité",
+    h2: "Haftung",
     body: [
-      `${siteConfig.name} s'efforce de maintenir les informations de ce site à jour et exactes, mais ne peut garantir l'absence d'erreurs ou d'omissions. L'utilisation de ce site relève de la responsabilité de l'utilisateur.`,
+      `${siteConfig.name} bemüht sich, die Informationen auf dieser Website aktuell und korrekt zu halten, kann jedoch keine Gewähr für die Fehlerfreiheit oder Vollständigkeit übernehmen. Die Nutzung dieser Website erfolgt in eigener Verantwortung des Nutzers.`,
     ],
   },
   {
-    h2: "Droit applicable",
+    h2: "Anwendbares Recht",
     body: [
-      "Les présentes mentions légales sont soumises au droit applicable au lieu d'exploitation du site. Tout litige relatif à leur interprétation ou à leur exécution relève de la compétence des tribunaux compétents.",
+      "Diese rechtlichen Hinweise unterliegen dem am Sitz des Website-Betreibers geltenden Recht. Für Streitigkeiten im Zusammenhang mit ihrer Auslegung oder Anwendung sind die zuständigen Gerichte zuständig.",
     ],
   },
   {
-    h2: "Contact",
+    h2: "Kontakt",
     body: [
-      `Pour toute question d'ordre légal concernant ce site, vous pouvez nous contacter par email à ${siteConfig.supportEmail} ou via WhatsApp au ${siteConfig.whatsapp.numberDisplay}.`,
+      `Bei rechtlichen Fragen zu dieser Website erreichen Sie uns per E-Mail unter ${siteConfig.supportEmail} oder über WhatsApp unter ${siteConfig.whatsapp.numberDisplay}.`,
     ],
   },
 ];
@@ -77,24 +77,23 @@ export default function LegalNoticePage() {
         <div className="container-edge relative flex flex-col items-start gap-5">
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-muted">
             <Link href="/" className="transition-colors hover:text-white">
-              Home
+              Startseite
             </Link>
             <span>/</span>
-            <span className="text-mist">Legal Notice</span>
+            <span className="text-mist">Rechtliche Hinweise</span>
           </nav>
           <h1 className="max-w-2xl font-display text-4xl font-bold tracking-tight text-cloud sm:text-5xl">
-            Legal Notice
+            Rechtliche Hinweise
           </h1>
-          <p className="max-w-xl text-balance text-base text-muted sm:text-lg" lang="fr">
-            Mentions légales relatives à l&apos;édition et à l&apos;hébergement du site{" "}
-            {siteConfig.domain}.
+          <p className="max-w-xl text-balance text-base text-muted sm:text-lg" lang="de">
+            Rechtliche Angaben zum Betrieb und Hosting der Website {siteConfig.domain}.
           </p>
         </div>
       </section>
 
       <section className="relative pb-24 sm:pb-28">
         <div className="container-edge">
-          <div className="mx-auto flex max-w-2xl flex-col gap-12" lang="fr">
+          <div className="mx-auto flex max-w-2xl flex-col gap-12" lang="de">
             {sections.map((section, i) => (
               <Reveal key={i}>
                 <div className="flex flex-col gap-4">
@@ -115,7 +114,7 @@ export default function LegalNoticePage() {
                 href="/"
                 className="inline-flex w-fit items-center gap-1.5 text-sm font-medium text-purple-300 transition-colors hover:text-white"
               >
-                ← Retour à l&apos;accueil
+                ← Zurück zur Startseite
               </Link>
             </Reveal>
           </div>
