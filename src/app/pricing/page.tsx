@@ -12,10 +12,19 @@ export const metadata: Metadata = {
     "IPTV Germany Premium Pakete für 3, 6 oder 12 Monate. +55.000 Live-Kanäle, +90.000 Filme & Serien, alle deutschen Premium- & Sportsender, Geld-zurück-Garantie.",
   alternates: { canonical: "/pricing" },
   openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: siteConfig.name,
     title: "IPTV Abo Deutschland | Premium Pakete ab €29",
     description:
       "IPTV Germany Premium Pakete für 3, 6 oder 12 Monate. +55.000 Live-Kanäle, +90.000 Filme & Serien, Geld-zurück-Garantie.",
     url: `${siteConfig.url}/pricing`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IPTV Abo Deutschland | Premium Pakete ab €29",
+    description:
+      "IPTV Germany Premium Pakete für 3, 6 oder 12 Monate. +55.000 Live-Kanäle, +90.000 Filme & Serien, Geld-zurück-Garantie.",
   },
 };
 

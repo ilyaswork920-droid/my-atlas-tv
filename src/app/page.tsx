@@ -18,10 +18,19 @@ export const metadata: Metadata = {
     "Streame mit IPTV Germany: 15.000+ Live-Kanäle, HD/4K/8K-Streaming, erstklassige internationale Inhalte. Sofortige Aktivierung, 24/7 WhatsApp-Support. Kostenlose Testphase verfügbar.",
   alternates: { canonical: "/" },
   openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: siteConfig.name,
     title: "IPTV Germany | Premium IPTV-Abo ab €29",
     description:
       "Streame mit IPTV Germany: 15.000+ Live-Kanäle, HD/4K/8K-Streaming, erstklassige internationale Inhalte. Sofortige Aktivierung, 24/7 WhatsApp-Support.",
     url: siteConfig.url,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IPTV Germany | Premium IPTV-Abo ab €29",
+    description:
+      "Streame mit IPTV Germany: 15.000+ Live-Kanäle, HD/4K/8K-Streaming, erstklassige internationale Inhalte. Sofortige Aktivierung, 24/7 WhatsApp-Support.",
   },
 };
 

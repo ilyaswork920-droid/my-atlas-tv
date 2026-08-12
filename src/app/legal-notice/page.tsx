@@ -8,9 +8,17 @@ export const metadata: Metadata = {
   description: `Rechtliche Hinweise zur Website ${siteConfig.name} (${siteConfig.domain}): Betreiber, Hosting, geistiges Eigentum und Kontaktinformationen.`,
   alternates: { canonical: "/legal-notice" },
   openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: siteConfig.name,
     title: `Rechtliche Hinweise | ${siteConfig.name}`,
     description: `Rechtliche Hinweise zur Website ${siteConfig.name} (${siteConfig.domain}): Betreiber, Hosting, geistiges Eigentum und Kontaktinformationen.`,
     url: `${siteConfig.url}/legal-notice`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Rechtliche Hinweise | ${siteConfig.name}`,
+    description: `Rechtliche Hinweise zur Website ${siteConfig.name} (${siteConfig.domain}): Betreiber, Hosting, geistiges Eigentum und Kontaktinformationen.`,
   },
 };
 

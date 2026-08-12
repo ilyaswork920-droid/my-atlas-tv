@@ -10,11 +10,19 @@ export const metadata: Metadata = {
     "Ratgeber, Vergleiche und praktische Tipps rund um IPTV in Deutschland: Anbieter, Smart-TV, Einrichtung, 4K-Qualität, Sport und Legalität, verständlich erklärt.",
   alternates: { canonical: "/blog" },
   openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: siteConfig.name,
     title: "IPTV Blog Deutschland | Ratgeber, Vergleiche und Tipps",
     description:
       "Ratgeber, Vergleiche und praktische Tipps rund um IPTV in Deutschland, verständlich erklärt.",
     url: `${siteConfig.url}/blog`,
-    locale: "de_DE",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IPTV Blog Deutschland | Ratgeber, Vergleiche und Tipps",
+    description:
+      "Ratgeber, Vergleiche und praktische Tipps rund um IPTV in Deutschland, verständlich erklärt.",
   },
 };
 
@@ -40,8 +48,8 @@ export default function BlogIndexPage() {
             className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3"
             stagger={0.04}
           >
-            {blogArticles.map((article) => (
-              <BlogCard key={article.slug} article={article} />
+            {blogArticles.map((article, i) => (
+              <BlogCard key={article.slug} article={article} priority={i < 3} />
             ))}
           </RevealGroup>
         </div>

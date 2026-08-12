@@ -7,7 +7,7 @@ export const clusterK: BlogArticle[] = [
     pillar: false,
     slug: "iptv-stream",
     keyword: "iptv stream",
-    title: "IPTV Stream: Wie die Technik hinter dem Fernsehen funktioniert",
+    title: "IPTV Stream: Die Technik hinter dem Fernsehen",
     h1: "IPTV Stream verstehen – vom Signal zum Fernsehbild",
     metaDescription:
       "IPTV Stream einfach erklärt: Wie Video-Daten über das Internet übertragen werden und was einen Stream vom klassischen Fernsehsignal unterscheidet.",
@@ -214,7 +214,7 @@ export const clusterK: BlogArticle[] = [
     pillar: false,
     slug: "iptv-bundesliga",
     keyword: "iptv bundesliga",
-    title: "IPTV Bundesliga: Was Fußballfans über Streaming wissen sollten",
+    title: "IPTV Bundesliga: Was Fußballfans wissen sollten",
     h1: "IPTV Bundesliga – Orientierung für sportinteressierte Zuschauer",
     metaDescription:
       "IPTV Bundesliga: wie Übertragungsrechte im Sport funktionieren und worauf Fußballfans bei der Wahl eines Streaming-Angebots achten sollten.",

@@ -185,7 +185,7 @@ export const clusterJ: BlogArticle[] = [
     pillar: false,
     slug: "iptv-playlist-deutsch",
     keyword: "iptv playlist deutsch",
-    title: "IPTV Playlist Deutsch: Deutsche Inhalte sinnvoll organisieren",
+    title: "IPTV Playlist Deutsch: Inhalte sinnvoll organisieren",
     h1: "IPTV Playlist Deutsch: So organisieren Sie deutschsprachige Inhalte übersichtlich",
     metaDescription:
       "Eine gute IPTV Playlist Deutsch macht den Unterschied im Alltag. Praktische Tipps zur Organisation, Favoriten und Übersichtlichkeit für deutschsprachige Nutzer.",

@@ -10,10 +10,19 @@ export const metadata: Metadata = {
     "Kontaktiere IPTV Germany bei Fragen zum Abo, zur Einrichtung oder zur Abrechnung. Schreib uns direkt auf WhatsApp für eine schnelle Antwort.",
   alternates: { canonical: "/contact" },
   openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: siteConfig.name,
     title: "Kontakt | IPTV Germany Support",
     description:
       "Kontaktiere IPTV Germany bei Fragen zum Abo, zur Einrichtung oder zur Abrechnung.",
     url: `${siteConfig.url}/contact`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kontakt | IPTV Germany Support",
+    description:
+      "Kontaktiere IPTV Germany bei Fragen zum Abo, zur Einrichtung oder zur Abrechnung.",
   },
 };
 

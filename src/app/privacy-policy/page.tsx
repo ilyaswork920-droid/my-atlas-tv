@@ -8,9 +8,17 @@ export const metadata: Metadata = {
   description: `Datenschutzerklärung der Website ${siteConfig.name} (${siteConfig.domain}): erhobene Daten, Zwecke, Rechtsgrundlage und Ihre Rechte nach der DSGVO.`,
   alternates: { canonical: "/privacy-policy" },
   openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: siteConfig.name,
     title: `Datenschutzerklärung | ${siteConfig.name}`,
     description: `Datenschutzerklärung der Website ${siteConfig.name} (${siteConfig.domain}): erhobene Daten, Zwecke, Rechtsgrundlage und Ihre Rechte nach der DSGVO.`,
     url: `${siteConfig.url}/privacy-policy`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Datenschutzerklärung | ${siteConfig.name}`,
+    description: `Datenschutzerklärung der Website ${siteConfig.name} (${siteConfig.domain}): erhobene Daten, Zwecke, Rechtsgrundlage und Ihre Rechte nach der DSGVO.`,
   },
 };
 

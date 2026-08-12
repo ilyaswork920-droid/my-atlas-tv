@@ -12,10 +12,19 @@ export const metadata: Metadata = {
     "Schritt-für-Schritt IPTV Germany Einrichtungsanleitung für Samsung, LG, Fire TV Stick, Android TV, iPhone, Android und PC. In unter 5 Minuten streamen, mit WhatsApp-Support.",
   alternates: { canonical: "/setup-guide" },
   openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: siteConfig.name,
     title: "IPTV Einrichtungsanleitung | Smart TV, Fire Stick, Handy & PC",
     description:
       "Schritt-für-Schritt IPTV Germany Einrichtungsanleitung für jedes Gerät. In unter 5 Minuten streamen.",
     url: `${siteConfig.url}/setup-guide`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IPTV Einrichtungsanleitung | Smart TV, Fire Stick, Handy & PC",
+    description:
+      "Schritt-für-Schritt IPTV Germany Einrichtungsanleitung für jedes Gerät. In unter 5 Minuten streamen.",
   },
 };
 
